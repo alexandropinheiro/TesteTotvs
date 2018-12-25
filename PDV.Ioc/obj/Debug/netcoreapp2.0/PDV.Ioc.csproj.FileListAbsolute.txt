@@ -1,0 +1,16 @@
+C:\Projetos\Totvs\PDV.Ioc\bin\Debug\netcoreapp2.0\PDV.Ioc.deps.json
+C:\Projetos\Totvs\PDV.Ioc\bin\Debug\netcoreapp2.0\PDV.Ioc.dll
+C:\Projetos\Totvs\PDV.Ioc\bin\Debug\netcoreapp2.0\PDV.Ioc.pdb
+C:\Projetos\Totvs\PDV.Ioc\bin\Debug\netcoreapp2.0\PDV.Dominio.dll
+C:\Projetos\Totvs\PDV.Ioc\bin\Debug\netcoreapp2.0\PDV.Infra.dll
+C:\Projetos\Totvs\PDV.Ioc\bin\Debug\netcoreapp2.0\PDV.Dominio.pdb
+C:\Projetos\Totvs\PDV.Ioc\bin\Debug\netcoreapp2.0\PDV.Infra.pdb
+C:\Projetos\Totvs\PDV.Ioc\obj\Debug\netcoreapp2.0\PDV.Ioc.csprojAssemblyReference.cache
+C:\Projetos\Totvs\PDV.Ioc\obj\Debug\netcoreapp2.0\PDV.Ioc.csproj.CoreCompileInputs.cache
+C:\Projetos\Totvs\PDV.Ioc\obj\Debug\netcoreapp2.0\PDV.Ioc.AssemblyInfoInputs.cache
+C:\Projetos\Totvs\PDV.Ioc\obj\Debug\netcoreapp2.0\PDV.Ioc.AssemblyInfo.cs
+C:\Projetos\Totvs\PDV.Ioc\obj\Debug\netcoreapp2.0\PDV.Ioc.csproj.CopyComplete
+C:\Projetos\Totvs\PDV.Ioc\obj\Debug\netcoreapp2.0\PDV.Ioc.dll
+C:\Projetos\Totvs\PDV.Ioc\obj\Debug\netcoreapp2.0\PDV.Ioc.pdb
+C:\Projetos\Totvs\PDV.Ioc\bin\Debug\netcoreapp2.0\PDV.Servico.dll
+C:\Projetos\Totvs\PDV.Ioc\bin\Debug\netcoreapp2.0\PDV.Servico.pdb

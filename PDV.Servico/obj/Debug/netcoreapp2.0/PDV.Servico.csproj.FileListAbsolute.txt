@@ -1,0 +1,12 @@
+C:\Projetos\Totvs\PDV.Servico\bin\Debug\netcoreapp2.0\PDV.Servico.deps.json
+C:\Projetos\Totvs\PDV.Servico\bin\Debug\netcoreapp2.0\PDV.Servico.dll
+C:\Projetos\Totvs\PDV.Servico\bin\Debug\netcoreapp2.0\PDV.Servico.pdb
+C:\Projetos\Totvs\PDV.Servico\bin\Debug\netcoreapp2.0\PDV.Dominio.dll
+C:\Projetos\Totvs\PDV.Servico\bin\Debug\netcoreapp2.0\PDV.Dominio.pdb
+C:\Projetos\Totvs\PDV.Servico\obj\Debug\netcoreapp2.0\PDV.Servico.csprojAssemblyReference.cache
+C:\Projetos\Totvs\PDV.Servico\obj\Debug\netcoreapp2.0\PDV.Servico.csproj.CoreCompileInputs.cache
+C:\Projetos\Totvs\PDV.Servico\obj\Debug\netcoreapp2.0\PDV.Servico.AssemblyInfoInputs.cache
+C:\Projetos\Totvs\PDV.Servico\obj\Debug\netcoreapp2.0\PDV.Servico.AssemblyInfo.cs
+C:\Projetos\Totvs\PDV.Servico\obj\Debug\netcoreapp2.0\PDV.Servico.csproj.CopyComplete
+C:\Projetos\Totvs\PDV.Servico\obj\Debug\netcoreapp2.0\PDV.Servico.dll
+C:\Projetos\Totvs\PDV.Servico\obj\Debug\netcoreapp2.0\PDV.Servico.pdb

@@ -1,0 +1,9 @@
+C:\Projetos\Totvs\Dominio\bin\Debug\netcoreapp2.1\PDV.Dominio.deps.json
+C:\Projetos\Totvs\Dominio\bin\Debug\netcoreapp2.1\PDV.Dominio.dll
+C:\Projetos\Totvs\Dominio\bin\Debug\netcoreapp2.1\PDV.Dominio.pdb
+C:\Projetos\Totvs\Dominio\obj\Debug\netcoreapp2.1\PDV.Dominio.csprojAssemblyReference.cache
+C:\Projetos\Totvs\Dominio\obj\Debug\netcoreapp2.1\PDV.Dominio.csproj.CoreCompileInputs.cache
+C:\Projetos\Totvs\Dominio\obj\Debug\netcoreapp2.1\PDV.Dominio.AssemblyInfoInputs.cache
+C:\Projetos\Totvs\Dominio\obj\Debug\netcoreapp2.1\PDV.Dominio.AssemblyInfo.cs
+C:\Projetos\Totvs\Dominio\obj\Debug\netcoreapp2.1\PDV.Dominio.dll
+C:\Projetos\Totvs\Dominio\obj\Debug\netcoreapp2.1\PDV.Dominio.pdb
