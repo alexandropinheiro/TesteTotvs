@@ -13,6 +13,15 @@ namespace PDV.Infra.Context
         public DbSet<Troco> Troco { get; set; }
         public DbSet<Valor> Valor { get; set; }
 
+        private readonly DbContextOptions _options;
+
+        public PdvContext() { }
+
+        public PdvContext(DbContextOptions options) : base(options)
+        {
+            _options = options;
+        }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.AddConfiguration(new VendaMapping());
@@ -24,12 +33,20 @@ namespace PDV.Infra.Context
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            var config = new ConfigurationBuilder()
+            if (_options == null)
+            {
+                var config = new ConfigurationBuilder()
                 .SetBasePath(Directory.GetCurrentDirectory())
                 .AddJsonFile("appsettings.json")
                 .Build();
 
-            optionsBuilder.UseSqlServer(config.GetConnectionString("DefaultConnection"));
+                optionsBuilder.UseSqlServer(config.GetConnectionString("DefaultConnection"));                
+            }
+            else
+            {
+                var dbContextBuilder = new DbContextOptionsBuilder(_options);               
+                optionsBuilder = dbContextBuilder;
+            }
         }
     }
 }

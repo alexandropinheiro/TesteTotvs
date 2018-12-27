@@ -1,3 +1,4 @@
+using PDV.Dominio.ValorMonetario;
 using PDV.Dominio.Venda;
 using System;
 using System.Collections.Generic;
@@ -6,8 +7,25 @@ using Xunit;
 
 namespace PDV.Testes
 {
-    public class VendaTeste : BaseTeste
+    public class VendaTeste
     {
+        private List<Valor> Valores;
+
+        public VendaTeste()
+        {            
+            Valores = new List<Valor>
+            {
+                new Valor { Id = Guid.NewGuid(), TipoValor = TipoValor.Nota, ValorMonetario = 100, DescricaoValor = "R$100,00" },
+                new Valor { Id = Guid.NewGuid(), TipoValor = TipoValor.Nota, ValorMonetario = 50, DescricaoValor = "R$50,00" },
+                new Valor { Id = Guid.NewGuid(), TipoValor = TipoValor.Nota, ValorMonetario = 20, DescricaoValor = "R$20,00" },
+                new Valor { Id = Guid.NewGuid(), TipoValor = TipoValor.Nota, ValorMonetario = 10, DescricaoValor = "R$10,00" },
+                new Valor { Id = Guid.NewGuid(), TipoValor = TipoValor.Moeda, ValorMonetario = Convert.ToDecimal(0.5), DescricaoValor = "R$0,50" },
+                new Valor { Id = Guid.NewGuid(), TipoValor = TipoValor.Moeda, ValorMonetario = Convert.ToDecimal(0.1), DescricaoValor = "R$0,10" },
+                new Valor { Id = Guid.NewGuid(), TipoValor = TipoValor.Moeda, ValorMonetario = Convert.ToDecimal(0.05), DescricaoValor = "R$0,05" },
+                new Valor { Id = Guid.NewGuid(), TipoValor = TipoValor.Moeda, ValorMonetario = Convert.ToDecimal(0.01), DescricaoValor = "R$0,01" }
+            };
+        }
+
         [Fact]
         public void AnalizandoValorDoTroco_Correto()
         {

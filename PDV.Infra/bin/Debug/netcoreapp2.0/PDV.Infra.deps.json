@@ -14,6 +14,7 @@
           "Microsoft.Extensions.Configuration.FileExtensions": "2.2.0",
           "Microsoft.Extensions.Configuration.Json": "2.2.0",
           "PDV.Dominio": "1.0.0",
+          "Microsoft.AspNetCore.Http.Abstractions": "2.0.3.0",
           "Microsoft.CodeAnalysis.Workspaces": "2.3.0.0"
         },
         "runtime": {
@@ -664,6 +665,14 @@
           "PDV.Dominio.dll": {}
         }
       },
+      "Microsoft.AspNetCore.Http.Abstractions/2.0.3.0": {
+        "runtime": {
+          "Microsoft.AspNetCore.Http.Abstractions.dll": {
+            "assemblyVersion": "2.0.3.0",
+            "fileVersion": "2.0.3.18114"
+          }
+        }
+      },
       "Microsoft.CodeAnalysis.Workspaces/2.3.0.0": {
         "runtime": {
           "Microsoft.CodeAnalysis.Workspaces.dll": {
@@ -1123,6 +1132,11 @@
     },
     "PDV.Dominio/1.0.0": {
       "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.AspNetCore.Http.Abstractions/2.0.3.0": {
+      "type": "reference",
       "serviceable": false,
       "sha512": ""
     },

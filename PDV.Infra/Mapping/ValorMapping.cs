@@ -2,7 +2,6 @@
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using PDV.Dominio.ValorMonetario;
 using PDV.Infra.Extensions;
-using System;
 
 namespace PDV.Infra.Mapping
 {

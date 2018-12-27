@@ -23,3 +23,4 @@ C:\Projetos\Totvs\PDV.Testes\bin\Debug\netcoreapp2.0\PDV.Ioc.dll
 C:\Projetos\Totvs\PDV.Testes\bin\Debug\netcoreapp2.0\PDV.Servico.dll
 C:\Projetos\Totvs\PDV.Testes\bin\Debug\netcoreapp2.0\PDV.Ioc.pdb
 C:\Projetos\Totvs\PDV.Testes\bin\Debug\netcoreapp2.0\PDV.Servico.pdb
+C:\Projetos\Totvs\PDV.Testes\bin\Debug\netcoreapp2.0\appsettings.development.json
