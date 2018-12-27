@@ -36,20 +36,6 @@ namespace PDV.Api.Controllers
             valoresParaTroco = _valorRepository.ObterTodos();
         }
 
-        // GET api/values
-        [HttpGet]
-        public IEnumerable<Venda> Get()
-        {
-            return _vendaRepository.ObterTodos();
-        }
-
-        // GET api/values/5
-        [HttpGet("{id}")]
-        public Venda Get(Guid id)
-        {            
-            return _vendaRepository.ObterPorId(id);
-        }
-
         // GET api/venda/gravar
         [HttpPost]
         [Route("gravar")]
@@ -66,48 +52,6 @@ namespace PDV.Api.Controllers
                 _uow.Commit();
 
                 return Ok(venda.DescricaoTroco());
-
-            }catch(Exception e)
-            {
-                return BadRequest(e.Message);
-            }
-        }
-
-        // GET api/venda/atualizar/id:guid
-        [HttpPut]
-        [Route("atualizar/{id:guid}")]
-        public IActionResult Atualizar(Guid id, [FromBody]VendaViewModel vendaViewModel)
-        {
-            try
-            {
-                var venda = _vendaRepository.ObterPorId(id);
-                venda.AlterarValores(vendaViewModel.ValorTotal, vendaViewModel.ValorRecebido);
-
-                _vendaService.CalcularTroco(venda, valoresParaTroco);
-
-                _vendaRepository.Atualizar(venda);
-                _uow.Commit();
-
-                return Ok(venda.DescricaoTroco());
-            }catch(Exception e)
-            {
-                return BadRequest(e.Message);
-            }
-        }
-
-        // GET api/venda/excluir/1
-        [HttpDelete]
-        [Route("excluir/{id}")]
-        public IActionResult Excluir(Guid id)
-        {
-            try
-            {
-                var venda = _vendaRepository.ObterPorId(id);
-
-                _vendaRepository.Excluir(venda);
-                _uow.Commit();
-
-                return Ok("Exclusão realizada com sucesso!");
 
             }catch(Exception e)
             {

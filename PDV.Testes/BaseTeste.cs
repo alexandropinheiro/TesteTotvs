@@ -1,6 +1,4 @@
-using Microsoft.Extensions.DependencyInjection;
-using PDV.Dominio.ValorMonetario;
-using PDV.Ioc;
+﻿using PDV.Dominio.ValorMonetario;
 using System;
 using System.Collections.Generic;
 
@@ -10,11 +8,9 @@ namespace PDV.Testes
     {
         protected List<Valor> Valores;
 
-        public BaseTeste(){            
+        public BaseTeste()
+        {
             PreencheValores();
-
-            IServiceCollection services = new ServiceCollection();
-            InjecaoDeDependencia.RegisterServices(services);
         }
 
         public void Dispose()
@@ -26,8 +22,8 @@ namespace PDV.Testes
 
         public void PersisteValores()
         {
-        //    Valores.ForEach(x => _valorRepository.Gravar(x));
-        //    _uow.Commit();
+            //    Valores.ForEach(x => _valorRepository.Gravar(x));
+            //    _uow.Commit();
         }
 
         public void PreencheValores()
@@ -97,13 +93,7 @@ namespace PDV.Testes
                     ValorMonetario = Convert.ToDecimal(0.01),
                     DescricaoValor = "R$0,01"
                 }
-            };            
+            };
         }
-
-        //[TearDown]
-        //public void TearDown()
-        //{
-
-        //}
     }
 }

@@ -16,9 +16,7 @@ namespace PDV.Servico.Services
                 var qtdNotas = Math.Truncate(valorDoTroco / valor.ValorMonetario);
 
                 if (qtdNotas > 0)
-                {
                     venda.AdicionarTroco(valor.Id, Convert.ToInt16(qtdNotas), valor);
-                }
 
                 valorDoTroco -= (qtdNotas * valor.ValorMonetario);
             }

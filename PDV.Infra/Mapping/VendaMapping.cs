@@ -21,7 +21,7 @@ namespace PDV.Infra.Mapping
 
             builder.HasMany(t => t.Trocos)
                 .WithOne(v => v.Venda)
-                .HasForeignKey(t => t.IdVenda);
+                .HasForeignKey(t => t.IdVenda);            
         }
     }
 }

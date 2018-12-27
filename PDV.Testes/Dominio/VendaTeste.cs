@@ -94,20 +94,39 @@ namespace PDV.Testes
 
             Assert.Equal("Não há troco", venda.DescricaoTroco());
         }
-
-        public override bool Equals(object obj)
+        
+        [Fact]
+        public void ExecutandoVendaFactory()
         {
-            return base.Equals(obj);
+            var vendaFactory = new VendaFactory
+            {
+                ValorRecebido = 150,
+                ValorTotal = 110
+            };
+            var venda = vendaFactory.Criar();
+
+            Assert.Equal(venda.ValorTotal, vendaFactory.ValorTotal);
+            Assert.Equal(venda.ValorRecebido, vendaFactory.ValorRecebido);
+            Assert.Equal(venda.ValorDoTroco, (vendaFactory.ValorRecebido - vendaFactory.ValorTotal));
         }
 
-        public override int GetHashCode()
+        [Fact]
+        public void ExecutandoVendaFactoryErroValorInsuficiente()
         {
-            return base.GetHashCode();
-        }
+            var vendaFactory = new VendaFactory
+            {
+                ValorRecebido = 100,
+                ValorTotal = 110
+            };
 
-        public override string ToString()
-        {
-            return base.ToString();
+            try
+            {
+                var venda = vendaFactory.Criar();
+                Assert.Null(venda);
+            }catch(Exception e)
+            {
+                Assert.Equal("Valor recebido insuficiente.", e.Message);
+            }
         }
     }
 }
