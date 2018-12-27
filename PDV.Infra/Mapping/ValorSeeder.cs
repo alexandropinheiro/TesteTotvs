@@ -1,4 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using PDV.Dominio.ValorMonetario;
 using System;
 
@@ -6,9 +6,9 @@ namespace PDV.Infra.Mapping
 {
     public static class ValorSeeder
     {
-        public static void Seed(this ModelBuilder modelBuilder)
+        public static void Seed(this EntityTypeBuilder<Valor> builder)
         {
-            modelBuilder.Entity<Valor>().HasData(
+            builder.HasData(
                 new Valor
                 {
                     Id = Guid.NewGuid(),

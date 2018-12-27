@@ -14,7 +14,7 @@ namespace PDV.Dominio.ValorMonetario
 
         public string DescricaoTipoValor {
             get {
-                return TipoValor == TipoValor.Nota ? "Nota" : "Moeda";
+                return TipoValor.ToString(); // == TipoValor.Nota ? "Nota" : "Moeda";
             }
         }
     }

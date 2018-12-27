@@ -5,8 +5,6 @@ using PDV.Dominio.Venda;
 using PDV.Infra.Extensions;
 using PDV.Infra.Mapping;
 using System.IO;
-using System.Linq;
-
 namespace PDV.Infra.Context
 {
     public class PdvContext : DbContext
@@ -20,7 +18,7 @@ namespace PDV.Infra.Context
             modelBuilder.AddConfiguration(new VendaMapping());
             modelBuilder.AddConfiguration(new TrocoMapping());
             modelBuilder.AddConfiguration(new ValorMapping());
-            
+
             base.OnModelCreating(modelBuilder);
         }
 

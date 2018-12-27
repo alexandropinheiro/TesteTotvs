@@ -1,8 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using PDV.Dominio.ValorMonetario;
-using PDV.Infra.Context;
 using PDV.Infra.Extensions;
+using System;
 
 namespace PDV.Infra.Mapping
 {
@@ -19,7 +19,9 @@ namespace PDV.Infra.Mapping
 
             builder.Property(t => t.ValorMonetario)
                 .IsRequired();
-            
+
+            builder.Seed();
+
             builder.ToTable("Valores");
         }
     }
