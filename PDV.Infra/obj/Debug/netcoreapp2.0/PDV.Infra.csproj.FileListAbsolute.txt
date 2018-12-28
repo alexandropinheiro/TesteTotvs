@@ -3,8 +3,12 @@ C:\Projetos\Totvs\PDV.Infra\bin\Debug\netcoreapp2.0\PDV.Infra.runtimeconfig.json
 C:\Projetos\Totvs\PDV.Infra\bin\Debug\netcoreapp2.0\PDV.Infra.runtimeconfig.dev.json
 C:\Projetos\Totvs\PDV.Infra\bin\Debug\netcoreapp2.0\PDV.Infra.dll
 C:\Projetos\Totvs\PDV.Infra\bin\Debug\netcoreapp2.0\PDV.Infra.pdb
+C:\Projetos\Totvs\PDV.Infra\bin\Debug\netcoreapp2.0\Microsoft.AspNetCore.Http.Abstractions.dll
+C:\Projetos\Totvs\PDV.Infra\bin\Debug\netcoreapp2.0\Microsoft.CodeAnalysis.Workspaces.dll
 C:\Projetos\Totvs\PDV.Infra\bin\Debug\netcoreapp2.0\PDV.Dominio.dll
 C:\Projetos\Totvs\PDV.Infra\bin\Debug\netcoreapp2.0\PDV.Dominio.pdb
+C:\Projetos\Totvs\PDV.Infra\bin\Debug\netcoreapp2.0\Microsoft.AspNetCore.Http.Abstractions.xml
+C:\Projetos\Totvs\PDV.Infra\bin\Debug\netcoreapp2.0\Microsoft.CodeAnalysis.Workspaces.xml
 C:\Projetos\Totvs\PDV.Infra\obj\Debug\netcoreapp2.0\PDV.Infra.csprojAssemblyReference.cache
 C:\Projetos\Totvs\PDV.Infra\obj\Debug\netcoreapp2.0\PDV.Infra.csproj.CoreCompileInputs.cache
 C:\Projetos\Totvs\PDV.Infra\obj\Debug\netcoreapp2.0\PDV.Infra.AssemblyInfoInputs.cache
@@ -12,7 +16,3 @@ C:\Projetos\Totvs\PDV.Infra\obj\Debug\netcoreapp2.0\PDV.Infra.AssemblyInfo.cs
 C:\Projetos\Totvs\PDV.Infra\obj\Debug\netcoreapp2.0\PDV.Infra.csproj.CopyComplete
 C:\Projetos\Totvs\PDV.Infra\obj\Debug\netcoreapp2.0\PDV.Infra.dll
 C:\Projetos\Totvs\PDV.Infra\obj\Debug\netcoreapp2.0\PDV.Infra.pdb
-C:\Projetos\Totvs\PDV.Infra\bin\Debug\netcoreapp2.0\Microsoft.CodeAnalysis.Workspaces.dll
-C:\Projetos\Totvs\PDV.Infra\bin\Debug\netcoreapp2.0\Microsoft.CodeAnalysis.Workspaces.xml
-C:\Projetos\Totvs\PDV.Infra\bin\Debug\netcoreapp2.0\Microsoft.AspNetCore.Http.Abstractions.dll
-C:\Projetos\Totvs\PDV.Infra\bin\Debug\netcoreapp2.0\Microsoft.AspNetCore.Http.Abstractions.xml

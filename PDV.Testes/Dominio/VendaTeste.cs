@@ -69,7 +69,7 @@ namespace PDV.Testes
             };
 
             venda.AdicionarListaDeTrocos(listaTrocos);
-            Assert.Equal("Entregar 1 nota de R$20,00 e 1 nota de R$10,00", venda.DescricaoTroco());
+            Assert.Equal("Entregar 1 nota de R$20,00 e 1 nota de R$10,00.", venda.DescricaoTroco());
         }
 
         [Fact]
@@ -88,7 +88,7 @@ namespace PDV.Testes
                 1,
                 valor);
 
-            Assert.Equal("Entregar 1 nota de R$20,00", venda.DescricaoTroco());
+            Assert.Equal("Entregar 1 nota de R$20,00.", venda.DescricaoTroco());
         }
 
         [Fact]
@@ -99,7 +99,7 @@ namespace PDV.Testes
                 Id = Guid.NewGuid()
             };
                         
-            Assert.Equal("Valor recebido insuficiente", venda.DescricaoTroco());
+            Assert.Equal("Valor recebido insuficiente.", venda.DescricaoTroco());
         }
 
         [Fact]
@@ -110,32 +110,27 @@ namespace PDV.Testes
                 Id = Guid.NewGuid()
             };
 
-            Assert.Equal("Não há troco", venda.DescricaoTroco());
+            Assert.Equal("Não há troco.", venda.DescricaoTroco());
         }
         
         [Fact]
         public void ExecutandoVendaFactory()
         {
-            var vendaFactory = new VendaFactory
-            {
-                ValorRecebido = 150,
-                ValorTotal = 110
-            };
+            var valorTotal = 110;
+            var valorRecebido = 150;
+
+            var vendaFactory = new VendaFactory(valorTotal, valorRecebido);
             var venda = vendaFactory.Criar();
 
-            Assert.Equal(venda.ValorTotal, vendaFactory.ValorTotal);
-            Assert.Equal(venda.ValorRecebido, vendaFactory.ValorRecebido);
-            Assert.Equal(venda.ValorDoTroco, (vendaFactory.ValorRecebido - vendaFactory.ValorTotal));
+            Assert.Equal(valorTotal, venda.ValorTotal);
+            Assert.Equal(valorRecebido, venda.ValorRecebido);
+            Assert.Equal((valorRecebido - valorTotal), venda.ValorDoTroco);
         }
 
         [Fact]
         public void ExecutandoVendaFactoryErroValorInsuficiente()
         {
-            var vendaFactory = new VendaFactory
-            {
-                ValorRecebido = 100,
-                ValorTotal = 110
-            };
+            var vendaFactory = new VendaFactory(110, 100);
 
             try
             {
@@ -146,5 +141,19 @@ namespace PDV.Testes
                 Assert.Equal("Valor recebido insuficiente.", e.Message);
             }
         }
+
+        [Fact]
+        public void AlterarVenda()
+        {
+            var valorTotal = 110;
+            var valorRecebido = 150;
+
+            var vendaFactory = new VendaFactory(valorTotal, valorRecebido);
+            var venda = vendaFactory.Criar();
+            Assert.Equal(40, venda.ValorDoTroco);
+
+            venda.AlterarValores(170, 250);
+            Assert.Equal(80, venda.ValorDoTroco);
+        }        
     }
 }

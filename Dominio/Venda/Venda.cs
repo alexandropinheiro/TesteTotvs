@@ -48,10 +48,10 @@ namespace PDV.Dominio.Venda
         public string DescricaoTroco()
         {
             if (ValorDoTroco < 0)
-                return "Valor recebido insuficiente";
+                return "Valor recebido insuficiente.";
 
             if (ValorDoTroco == 0)
-                return "Não há troco";
+                return "Não há troco.";
 
             var descricaoTroco = "";
             var i = 1;
@@ -67,7 +67,7 @@ namespace PDV.Dominio.Venda
                 i++;
             }
 
-            return $"Entregar {descricaoTroco}";
+            return $"Entregar {descricaoTroco}.";
         }
     }
 }

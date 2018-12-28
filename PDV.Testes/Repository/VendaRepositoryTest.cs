@@ -23,11 +23,7 @@ namespace PDV.Testes.Infra
         public void Gravar_Venda()
         {
             #region Teste de insert e retornar 1 objeto
-            var vendaFactory = new VendaFactory
-            {
-                ValorTotal = 100,
-                ValorRecebido = 120
-            };
+            var vendaFactory = new VendaFactory(110, 120);
             var venda = vendaFactory.Criar();
 
             _repository.Gravar(venda);
@@ -39,11 +35,7 @@ namespace PDV.Testes.Infra
             #endregion
 
             #region retornar 2 objetos
-            var vendaFactory2 = new VendaFactory
-            {
-                ValorTotal = 50,
-                ValorRecebido = 90
-            };
+            var vendaFactory2 = new VendaFactory(50, 90);
             var venda2 = vendaFactory.Criar();
 
             _repository.Gravar(venda2);

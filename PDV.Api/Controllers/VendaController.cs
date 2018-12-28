@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using PDV.Api.ViewModels;
 using PDV.Dominio;
+using PDV.Dominio.DTO;
 using PDV.Dominio.ValorMonetario;
 using PDV.Dominio.Venda;
 using System;
@@ -43,7 +44,9 @@ namespace PDV.Api.Controllers
         {
             try
             {
-                var vendaFactory = _mapper.Map<VendaFactory>(vendaViewModel);
+                var vendaDTO = _mapper.Map<VendaDTO>(vendaViewModel);
+
+                var vendaFactory = new VendaFactory(vendaDTO.ValorTotal, vendaDTO.ValorRecebido);
                 var venda = vendaFactory.Criar();
                 
                 _vendaService.CalcularTroco(venda, valoresParaTroco);

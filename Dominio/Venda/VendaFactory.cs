@@ -4,15 +4,21 @@ namespace PDV.Dominio.Venda
 {
     public class VendaFactory
     {
-        public decimal ValorTotal;
-        public decimal ValorRecebido;
+        private readonly decimal _valorTotal;
+        private readonly decimal _valorRecebido;
+
+        public VendaFactory(decimal valorTotal, decimal valorRecebido)
+        {
+            _valorTotal = valorTotal;
+            _valorRecebido = valorRecebido;
+        }
 
         public Venda Criar()
         {
-            if (ValorRecebido < ValorTotal)
+            if (_valorRecebido < _valorTotal)
                 throw new Exception("Valor recebido insuficiente.");
 
-            return new Venda(ValorTotal, ValorRecebido)
+            return new Venda(_valorTotal, _valorRecebido)
             {
                 Id = Guid.NewGuid()
             };
